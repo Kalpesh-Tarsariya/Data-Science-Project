@@ -5,6 +5,8 @@ from src.MLProject.components.data_ingestion import DataIngestion, DataIngestion
 from src.MLProject.components.data_ingestion import DataIngestionConfig
 from src.MLProject.components.data_transformation import DataTransformationConfig, DataTransformation
 from src.MLProject.components.model_trainer import ModelTrainerConfig, ModelTrainer
+
+
 import warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 

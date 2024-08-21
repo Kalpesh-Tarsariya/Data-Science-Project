@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A/Desktop/Krish%20Naik%20project/mlruns/0/0e30a9cc8df64c7c8706732ef029475b/artifacts
+end_time: 1724253819811
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e30a9cc8df64c7c8706732ef029475b
+run_name: valuable-skink-550
+run_uuid: 0e30a9cc8df64c7c8706732ef029475b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724253819732
+status: 4
+tags: []
+user_id: root

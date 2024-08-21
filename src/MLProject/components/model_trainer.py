@@ -1,7 +1,9 @@
 import os
+import numpy as np
 import sys
 from dataclasses import dataclass
 import mlflow
+from urllib.parse import urlparse
 # from catboost import CatBoostRegressor
 from sklearn.ensemble import (AdaBoostRegressor, GradientBoostingRegressor, RandomForestRegressor)
 from sklearn.linear_model import LinearRegression
@@ -9,6 +11,8 @@ from sklearn.metrics import r2_score
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRFRegressor
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error 
 
 from src.MLProject.exception import CustomException
 from src.MLProject.logger import logging
@@ -101,8 +105,8 @@ class ModelTrainer:
 
             best_params = params[actual_model]
 
-            mlflow.set_registry_url("https://dagshub.com/Kalpesh-Tarsariya/Data-Science-Project.mlflow")
-            tracking_url_type_store = urlparse(mlflow.get_tracking_url()).scheme
+            mlflow.set_registry_uri("https://dagshub.com/Kalpesh-Tarsariya/Data-Science-Project.mlflow")
+            tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             # mlflow
             with mlflow.start_run():
