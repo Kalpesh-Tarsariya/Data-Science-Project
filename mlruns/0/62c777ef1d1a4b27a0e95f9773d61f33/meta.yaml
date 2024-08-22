@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A/Desktop/Krish%20Naik%20project/mlruns/0/62c777ef1d1a4b27a0e95f9773d61f33/artifacts
+end_time: 1724330062692
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 62c777ef1d1a4b27a0e95f9773d61f33
+run_name: handsome-mouse-204
+run_uuid: 62c777ef1d1a4b27a0e95f9773d61f33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724330054811
+status: 3
+tags: []
+user_id: root

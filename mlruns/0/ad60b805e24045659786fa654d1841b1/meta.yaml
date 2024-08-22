@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A/Desktop/Krish%20Naik%20project/mlruns/0/ad60b805e24045659786fa654d1841b1/artifacts
+end_time: 1724329372864
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ad60b805e24045659786fa654d1841b1
+run_name: gifted-boar-423
+run_uuid: ad60b805e24045659786fa654d1841b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724329372807
+status: 4
+tags: []
+user_id: root

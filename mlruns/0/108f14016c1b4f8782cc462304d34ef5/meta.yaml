@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A/Desktop/Krish%20Naik%20project/mlruns/0/108f14016c1b4f8782cc462304d34ef5/artifacts
+end_time: 1724330054795
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 108f14016c1b4f8782cc462304d34ef5
+run_name: incongruous-worm-46
+run_uuid: 108f14016c1b4f8782cc462304d34ef5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724330054717
+status: 3
+tags: []
+user_id: root

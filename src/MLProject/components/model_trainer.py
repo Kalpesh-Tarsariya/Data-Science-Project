@@ -3,6 +3,7 @@ import numpy as np
 import sys
 from dataclasses import dataclass
 import mlflow
+import dagshub
 from urllib.parse import urlparse
 # from catboost import CatBoostRegressor
 from sklearn.ensemble import (AdaBoostRegressor, GradientBoostingRegressor, RandomForestRegressor)
@@ -105,17 +106,37 @@ class ModelTrainer:
 
             best_params = params[actual_model]
 
-            mlflow.set_registry_uri("https://dagshub.com/Kalpesh-Tarsariya/Data-Science-Project.mlflow")
+            mlflow.set_tracking_uri("https://dagshub.com/Kalpesh-Tarsariya/Data-Science-Project.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+            # dagshub.init(repo_owner='Kalpesh-Tarsariya', repo_name='Data-Science-Project', mlflow=True)
+            
 
             # mlflow
             with mlflow.start_run():
                 predicted_qualities = best_model.predict(X_test)
                 (rmse, mae, r2) = self.eval_metrics(y_test, predicted_qualities)
                 mlflow.log_params(best_params)
-                mlflow.log_metrics("rmse", rmse)
-                mlflow.log_metrics("r2", r2)
-                mlflow.log_metrics("mae", mae)
+                mlflow.log_metric("rmse", rmse)
+                
+                # if isinstance(rmse, (int, float)):  # Check if rmse is a single numeric value
+                #     rmse = {"rmse": rmse}
+    
+                # mlflow.log_metrics(rmse)
+                mlflow.log_metric("r2", r2)
+                
+                # if isinstance(r2, (int, float)):  # This assumes r2 is a single metric value
+                #     r2 = {"r2": r2}
+    
+                # mlflow.log_metrics(r2)
+
+                mlflow.log_metric("mae", mae)
+                
+                # if isinstance(mae, (int, float)):  # Check if rmse is a single numeric value
+                #     mae = {"mae": mae}
+    
+                # mlflow.log_metrics(mae)
+               
+
 
             # Model registry does not work with files store
             if tracking_url_type_store != "file":

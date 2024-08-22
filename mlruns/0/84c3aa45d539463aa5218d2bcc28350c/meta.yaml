@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A/Desktop/Krish%20Naik%20project/mlruns/0/84c3aa45d539463aa5218d2bcc28350c/artifacts
+end_time: 1724329768993
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 84c3aa45d539463aa5218d2bcc28350c
+run_name: wistful-ray-148
+run_uuid: 84c3aa45d539463aa5218d2bcc28350c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724329768909
+status: 4
+tags: []
+user_id: root
